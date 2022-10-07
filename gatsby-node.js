@@ -611,3 +611,10 @@ exports.createSchemaCustomization = async ({ actions }) => {
     }
   `)
 }
+
+exports.createPages = async ({ actions }) => {
+  actions.createSlice({
+    id: `header-and-footer`,
+    component: require.resolve(`./src/components/header-and-footer.js`),
+  })
+}
