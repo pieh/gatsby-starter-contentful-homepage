@@ -9,7 +9,8 @@
     "clean": "gatsby clean",
     "gatsby-provision": "gatsby-provision-contentful --contentful-data-path='./scripts/data.json' --space-id=$CONTENTFUL_SPACE_ID --management-token=$CONTENTFUL_MANAGEMENT_TOKEN",
     "setup": "node ./scripts/setup.js",
-    "export-content": "contentful space export --space-id=$SPACE_ID --management-token=$MANAGEMENT_TOKEN --export-dir=scripts --content-file=data.json"
+    "export-content": "contentful space export --space-id=$SPACE_ID --management-token=$MANAGEMENT_TOKEN --export-dir=scripts --content-file=data.json",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^15.11.1",
@@ -19,7 +20,7 @@
     "@vanilla-extract/css": "^1.9.0",
     "@vanilla-extract/css-utils": "^0.1.2",
     "@vanilla-extract/webpack-plugin": "^2.1.12",
-    "gatsby": "4.25.0-alpha-preview-slices.d20221008t071943.45",
+    "gatsby": "^5.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-plugin-image": "^3.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-plugin-manifest": "^5.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-plugin-react-helmet": "^6.0.0-alpha-v5.d20221007t081809.41",
@@ -29,6 +30,7 @@
     "gatsby-source-filesystem": "^5.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-transformer-sharp": "^5.0.0-alpha-v5.d20221007t081809.41",
     "is-absolute-url": "^4.0.1",
+    "patch-package": "^6.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.9",
