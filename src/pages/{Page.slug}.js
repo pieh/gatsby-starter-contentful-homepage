@@ -3,11 +3,12 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Container, Box, Heading } from "../components/ui"
 
-export default function Page({ data: { page } }) {
+export default function Page({ data: { page }, serverData }) {
   return (
     <Layout {...page}>
       <Box paddingY={5}>
         <Container width="narrow">
+          <pre>{JSON.stringify({ serverData }, null, 2)}</pre>
           <Heading as="h1">{page.title}</Heading>
           <div
             dangerouslySetInnerHTML={{
@@ -35,3 +36,11 @@ export const query = graphql`
     }
   }
 `
+
+export function getServerData() {
+  return {
+    props: {
+      wat: true,
+    },
+  }
+}
