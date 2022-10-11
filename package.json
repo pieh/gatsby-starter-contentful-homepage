@@ -20,7 +20,7 @@
     "@vanilla-extract/css": "^1.9.0",
     "@vanilla-extract/css-utils": "^0.1.2",
     "@vanilla-extract/webpack-plugin": "^2.1.12",
-    "gatsby": "^5.0.0-alpha-v5.d20221010t183635.51",
+    "gatsby": "^4.25.0-alpha-preview-slices.d20221011t181843.56",
     "gatsby-plugin-image": "^3.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-plugin-manifest": "^5.0.0-alpha-v5.d20221007t081809.41",
     "gatsby-plugin-react-helmet": "^6.0.0-alpha-v5.d20221007t081809.41",
